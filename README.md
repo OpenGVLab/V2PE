@@ -67,117 +67,117 @@ pretrained
 2. Organize the data as follows in `dataset/`:
 
 <details>
-<summary>Directory Structure</summary>
+<summary>`dataset/` Directory Structure</summary>
 
-    ```none
-    dataset
-    ├── annotation
-    │   ├── long_mr_128k/
-    │   ├── long_mr_256k/
-    │   ├── long_mr_32k/
-    │   ├── long_vqa_32k/
-    │   ├── milebench_16k/
-    │   └── milebench_nh/
-    ├── image
-    │   ├── long_mr
-    │   │   ├── train/
-    │   │   └── val/
-    │   ├── long_vqa
-    │   │   ├── image
-    │   │   │   ├── deepform
-    │   │   │   │   ├── train/
-    │   │   │   │   └── val/
-    │   │   │   ├── docvqa
-    │   │   │   │   ├── train/
-    │   │   │   │   └── val/
-    │   │   │   ├── infovqa
-    │   │   │   │   ├── train/
-    │   │   │   │   └── val/
-    │   │   │   ├── kleistercharity
-    │   │   │   │   ├── train/
-    │   │   │   │   └── val/
-    │   │   │   ├── svqa
-    │   │   │   │   ├── train/
-    │   │   │   │   └── val/
-    │   │   │   └── visualmrc
-    │   │   │       ├── train/
-    │   │   │       └── val/
-    │   │   └── paste
-    │   │       ├── chartqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── clevr
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── dvqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── gqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── ocrvqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── okvqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── tabfact
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── textcaps
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── textvqa
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       ├── vizwiz
-    │   │       │   ├── train/
-    │   │       │   └── val/
-    │   │       └── wikitablequestions
-    │   │           ├── train/
-    │   │           └── val/
-    │   └── milebench
-    │       ├── clevr
-    │       │   └── train/
-    │       ├── gpr
-    │       │   └── train/
-    │       ├── iedit
-    │       │   └── train/
-    │       ├── mmcoqa
-    │       │   └── train/
-    │       ├── mmqa
-    │       │   └── train/
-    │       ├── nh
-    │       │   └── train/
-    │       ├── objintercn
-    │       │   └── train/
-    │       ├── ocrvqa
-    │       │   └── train/
-    │       ├── percept
-    │       │   └── train/
-    │       ├── slidevqa
-    │       │   └── train/
-    │       ├── spotdiff
-    │       │   └── train/
-    │       ├── sta_charades
-    │       │   └── train/
-    │       ├── star
-    │       │   └── train/
-    │       ├── tqa
-    │       │   └── train/
-    │       └── webqa
-    │           └── train/
-    └── val
-        ├── long_mr_128k/
-        ├── long_mr_1m/
-        ├── long_mr_256k/
-        ├── long_mr_512k/
-        ├── long_vqa_32k/
-        ├── long_vqa_40k/
-        ├── long_vqa_48k/
-        ├── long_vqa_56k/
-        └── long_vqa_64k/
-    ```
+```none
+dataset
+├── annotation
+│   ├── long_mr_128k/
+│   ├── long_mr_256k/
+│   ├── long_mr_32k/
+│   ├── long_vqa_32k/
+│   ├── milebench_16k/
+│   └── milebench_nh/
+├── image
+│   ├── long_mr
+│   │   ├── train/
+│   │   └── val/
+│   ├── long_vqa
+│   │   ├── image
+│   │   │   ├── deepform
+│   │   │   │   ├── train/
+│   │   │   │   └── val/
+│   │   │   ├── docvqa
+│   │   │   │   ├── train/
+│   │   │   │   └── val/
+│   │   │   ├── infovqa
+│   │   │   │   ├── train/
+│   │   │   │   └── val/
+│   │   │   ├── kleistercharity
+│   │   │   │   ├── train/
+│   │   │   │   └── val/
+│   │   │   ├── svqa
+│   │   │   │   ├── train/
+│   │   │   │   └── val/
+│   │   │   └── visualmrc
+│   │   │       ├── train/
+│   │   │       └── val/
+│   │   └── paste
+│   │       ├── chartqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── clevr
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── dvqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── gqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── ocrvqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── okvqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── tabfact
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── textcaps
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── textvqa
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       ├── vizwiz
+│   │       │   ├── train/
+│   │       │   └── val/
+│   │       └── wikitablequestions
+│   │           ├── train/
+│   │           └── val/
+│   └── milebench
+│       ├── clevr
+│       │   └── train/
+│       ├── gpr
+│       │   └── train/
+│       ├── iedit
+│       │   └── train/
+│       ├── mmcoqa
+│       │   └── train/
+│       ├── mmqa
+│       │   └── train/
+│       ├── nh
+│       │   └── train/
+│       ├── objintercn
+│       │   └── train/
+│       ├── ocrvqa
+│       │   └── train/
+│       ├── percept
+│       │   └── train/
+│       ├── slidevqa
+│       │   └── train/
+│       ├── spotdiff
+│       │   └── train/
+│       ├── sta_charades
+│       │   └── train/
+│       ├── star
+│       │   └── train/
+│       ├── tqa
+│       │   └── train/
+│       └── webqa
+│           └── train/
+└── val
+    ├── long_mr_128k/
+    ├── long_mr_1m/
+    ├── long_mr_256k/
+    ├── long_mr_512k/
+    ├── long_vqa_32k/
+    ├── long_vqa_40k/
+    ├── long_vqa_48k/
+    ├── long_vqa_56k/
+    └── long_vqa_64k/
+```
 
 </details>
 
