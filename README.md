@@ -1,6 +1,6 @@
 # V2PE: Improving Multimodal Long-Context Capability of Vision-Language Models with Variable Visual Position Encoding
 
-The official implementation of the paper "[V2PE: Improving Multimodal Long-Context Capability of Vision-Language Models with Variable Visual Position Encoding](https://arxiv.org/abs/2412.09616)". 
+The official implementation of the paper "[V2PE: Improving Multimodal Long-Context Capability of Vision-Language Models with Variable Visual Position Encoding](https://openaccess.thecvf.com/content/ICCV2025/html/Ge_V2PE_Improving_Multimodal_Long-Context_Capability_of_Vision-Language_Models_with_Variable_ICCV_2025_paper.html)". 
 
 <div align="center">
     <img src="assets/fig1_hf_00.png" alt="drawing" width="600"/>
@@ -8,7 +8,7 @@ The official implementation of the paper "[V2PE: Improving Multimodal Long-Conte
 
 <div align="center">
 
-[\[🆕 Blog\]](https://zzdhybthu.github.io/V2PE.github.io)  [\[📜 ArXiv Paper\]](https://arxiv.org/abs/2412.09616)  [\[🤗 HF Models\]](https://huggingface.co/OpenGVLab/V2PE)  [\[📖 HF Datasets\]](https://huggingface.co/datasets/OpenGVLab/V2PE-Data)
+[\[🆕 Blog\]](https://v2pe.ziyic941.xyz)  [\[📜 Paper\]](https://openaccess.thecvf.com/content/ICCV2025/html/Ge_V2PE_Improving_Multimodal_Long-Context_Capability_of_Vision-Language_Models_with_Variable_ICCV_2025_paper.html)  [\[🤗 HF Models\]](https://huggingface.co/OpenGVLab/V2PE)  [\[📖 HF Datasets\]](https://huggingface.co/datasets/OpenGVLab/V2PE-Data)
 
 </div>
 
@@ -65,6 +65,9 @@ pretrained
 1. Download training and validation dataset from [HuggingFace](https://huggingface.co/datasets/OpenGVLab/V2PE-Data)
 
 2. Organize the data as follows in `dataset/`:
+
+<details>
+<summary>Directory Structure</summary>
 
     ```none
     dataset
@@ -175,6 +178,8 @@ pretrained
         ├── long_vqa_56k/
         └── long_vqa_64k/
     ```
+
+</details>
 
 ### Start Training
 
